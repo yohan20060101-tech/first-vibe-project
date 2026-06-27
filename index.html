@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Vibe Project</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      margin: 0;
+      background: #111827;
+      color: white;
+    }
+
+    main {
+      text-align: center;
+    }
+
+    button {
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>My First Vibe-Coded Project</h1>
+    <p id="message">The project is working.</p>
+    <button onclick="changeMessage()">Click me</button>
+  </main>
+
+  <script>
+    function changeMessage() {
+      document.getElementById("message").textContent =
+        "The button works. Civilization may continue.";
+    }
+  </script>
+</body>
+</html>
