@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Project</title>
+
+    <style>
+        body {
+            background: #111827;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My First Vibe-Coded Website</h1>
+
+    <p id="message">
+        I successfully put a project on GitHub.
+    </p>
+
+    <button onclick="changeMessage()">
+        Click me
+    </button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById("message").textContent =
+                "The button works. Humanity survives another day.";
+        }
+    </script>
+</body>
+</html>
